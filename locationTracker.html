@@ -1,0 +1,46 @@
+<!-- @author Wendy Robins -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>HW2_Robins Part 1</title>
+        <meta charset="UTF-8">
+        <script src="locationTracker.js"></script>
+        <link rel="stylesheet" href="html5.css">
+    </head>
+
+    <body>
+
+        <header><h2>Location Tracker by Wendy Robins</h2></header>
+
+        <section>
+
+            <article>
+
+                <!-- start button to get location -->
+                <button id="startButton">Start</button>
+                <p></p>
+
+                <!-- show the results -->
+                <div id="status">
+                    <p id="counter">Update#:</p>
+                    <p id="latitude">Start Latitude:</p>
+                    <p id="longitude">Start Longitude:</p>
+                    <p id="currLatitude">Current Latitude:</p>
+                    <p id="currLongitude">Current Longitude:</p>
+                </div>
+
+               <!-- show the map -->
+               <div id="map"></div>
+
+            </article>
+
+        </section>
+
+        <!-- third party api Google Maps copied for use to get the data-->
+        <script async defer
+               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvoDrEjaEA6UlD0XmcPkTw0TCpJ9b_TMk&callback=initMap"
+               type="text/javascript">
+        </script>
+    </body>
+</html>
